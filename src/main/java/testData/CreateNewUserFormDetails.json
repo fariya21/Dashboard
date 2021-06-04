@@ -3,10 +3,10 @@
 
 {
 "Username":"TrynewuserJenkins123",
-"FirstName":"Trynewuser1",
-"LastName":"Trynewuser11",
+"FirstName":"Trynewuser12",
+"LastName":"Trynewuser17",
 "Email":"Testingautomation@gmail.com",
-"Password":"Abcd@123",
+"Password":"Abcd@12345",
 "Location":"Test",
 "UserRole":"Preparer",
 "Department":"Verification-Temp Staff",
