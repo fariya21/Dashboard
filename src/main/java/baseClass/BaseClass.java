@@ -20,7 +20,7 @@ public class BaseClass {
 		try
 		{
 			prop=new Properties();
-			FileInputStream fis=new FileInputStream("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
+			FileInputStream fis=new FileInputStream("C:/Users/fariya.wani/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
 			prop.load(fis);
 	}
 		catch(IOException e)
@@ -37,13 +37,13 @@ public class BaseClass {
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-		System.setProperty("webdriver.chrome.driver","C:/chromedriver1/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:/Chromedriver/chromedriver.exe");
 		driver =new ChromeDriver();
 		
 			}
 	else if(browsername.equals("firefox"))
 	{
-System.setProperty("webdriver.chrome.driver","C:/chromedriver1/chromedriver.exe");
+System.setProperty("webdriver.chrome.driver","C:/Chromedriver/chromedriver.exe");
 driver =new FirefoxDriver();
 
 	}
