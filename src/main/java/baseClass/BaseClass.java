@@ -20,7 +20,7 @@ public class BaseClass {
 		try
 		{
 			prop=new Properties();
-			FileInputStream fis=new FileInputStream("C:/Users/fariya.wani/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
+			FileInputStream fis=new FileInputStream("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/configuration/Config.properties");
 			prop.load(fis);
 	}
 		catch(IOException e)
@@ -37,7 +37,7 @@ public class BaseClass {
 	String browsername=prop.getProperty("Browser");
 	if(browsername.equals("chrome"))
 			{
-		System.setProperty("webdriver.chrome.driver","C:/eclipse-java-2020-12-R-win32-x86_64/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:/chromedriver1/chromedriver.exe");
 		driver =new ChromeDriver();
 		
 			}
@@ -52,6 +52,7 @@ driver =new FirefoxDriver();
 	driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	driver.get(prop.getProperty("Url"));
+	
 	}
 	
 	

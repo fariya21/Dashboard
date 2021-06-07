@@ -2,13 +2,13 @@
 "FormDetails":[ 
 
 {
-"Username":"TrynewuserJenkins123",
-"FirstName":"Trynewuser12",
-"LastName":"Trynewuser17",
-"Email":"Testingautomation@gmail.com",
-"Password":"Abcd@12345",
-"Location":"Test",
-"UserRole":"Preparer",
+"Username":"Manager12",
+"FirstName":"DemoD",
+"LastName":"ManagerD",
+"Email":"Test@gmail.com",
+"Password":"Abcd@123",
+"Location":"Mumbai",
+"UserRole":["Manager","Reviewer","Sr. Verifier","Team Lead","Verifier"],
 "Department":"Verification-Temp Staff",
 "Comments":"dummyuser1",
 "SecurityQuestion1":"In which city you were born ?",

@@ -32,7 +32,7 @@ public class AdminPageHome extends BaseClass {
 		AdminHomePage AHP=new AdminHomePage();
 		AHP.CreateNewUser();
 		AHP.EnterCreateUserFormDetails();
-	}
+		}
 	
 	@And ("enter details in create user form and save")
 	public void enter_details_in_create_user_form_and_save()

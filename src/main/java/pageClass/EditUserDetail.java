@@ -22,7 +22,7 @@ import baseClass.BaseClass;
 import io.cucumber.core.gherkin.messages.internal.gherkin.internal.com.eclipsesource.json.ParseException;
 
 public class EditUserDetail extends BaseClass {
-	@FindBy(id="sidebarCollapse")
+	@FindBy(xpath="//i[text()='chevron_left ']")
 	WebElement Expandbutton;
 	
 	@FindBy(xpath="//a[@id='3001']")
@@ -85,7 +85,7 @@ WebElement UserRoles;
 	
 	public void ExpandAndUsrMgmt() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Expandbutton.click();
 		Thread.sleep(2000);
 		UserMgmtButton.click();
@@ -94,7 +94,7 @@ WebElement UserRoles;
 	}
 	
 	public void EditUser() throws InterruptedException, IOException, ParseException, org.json.simple.parser.ParseException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Expandbutton.click();
 		Thread.sleep(2000);
 		UserMgmtButton.click();
@@ -102,7 +102,7 @@ WebElement UserRoles;
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		JSONParser jparser= new JSONParser();
-		FileReader fr=new FileReader("C:/Users/fariya.wani/eclipse-workspace/NewSCD/src/main/java/testData/EditUserDetailsAndDelete.json");
+		FileReader fr=new FileReader("C:/Users/Deepak.Badgotya/eclipse-workspace/NewSCD/src/main/java/testData/EditUserDetailsAndDelete.json");
 		JSONObject jobject=(JSONObject) jparser.parse(fr);
 		JSONArray jarray=(JSONArray) jobject.get("EditUserDetails");
 		for(int i=0;i<jarray.size();i++)
